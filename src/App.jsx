@@ -1,122 +1,154 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { useState } from "react";
+import { gelars } from "./data/gelars";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [sortAscending, setSortAscending] = useState(true);
+
+  const sortedGelars = [...gelars].sort((a, b) => {
+    return sortAscending
+      ? a.holder_count - b.holder_count
+      : b.holder_count - a.holder_count;
+  });
+
+  const totalGelars = gelars.length;
+
+  const emptyGelars = gelars.filter(
+    (gelar) => gelar.holder_count === 0
+  ).length;
+
+  const totalHolders = gelars.reduce(
+    (total, gelar) => total + gelar.holder_count,
+    0
+  );
+
+  function toggleSort() {
+    setSortAscending((current) => !current);
+  }
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+    <main className="app">
+      {/* HEADER */}
+      <header className="header">
+        <div className="header-text">
+          <p className="eyebrow">CATATAN GELAR</p>
+
+          <h1>Daftar Gelar</h1>
+
+          <p className="subtitle">
+            Catatan gelar dan para pemegangnya
           </p>
         </div>
+
         <button
+          className="sort-button"
+          onClick={toggleSort}
           type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
         >
-          Count is {count}
+          <span className="sort-icon">↕</span>
+
+          <span>
+            {sortAscending
+              ? "Belum Diambil → Paling Banyak"
+              : "Paling Banyak → Belum Diambil"}
+          </span>
         </button>
-      </section>
+      </header>
 
-      <div className="ticks"></div>
+      {/* SUMMARY */}
+      <section className="summary">
+        <div className="summary-item">
+          <span className="summary-number">
+            {totalGelars}
+          </span>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+          <span className="summary-label">
+            Total Gelar
+          </span>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+
+        <div className="summary-item">
+          <span className="summary-number">
+            {emptyGelars}
+          </span>
+
+          <span className="summary-label">
+            Belum Diambil
+          </span>
+        </div>
+
+        <div className="summary-item">
+          <span className="summary-number">
+            {totalHolders}
+          </span>
+
+          <span className="summary-label">
+            Pemegang
+          </span>
         </div>
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+      {/* LIST HEADER */}
+      <section className="list-section">
+        <div className="list-heading">
+          <h2>Daftar Gelar</h2>
+
+          <span className="list-count">
+            {totalGelars} gelar
+          </span>
+        </div>
+
+        {/* GELAR LIST */}
+        <div className="gelar-list">
+          {sortedGelars.map((item, index) => (
+            <article
+              className={`gelar-card ${
+                item.holder_count === 0 ? "untaken" : ""
+              }`}
+              key={item.gelar}
+            >
+              {/* NUMBER */}
+              <div className="number">
+                {String(index + 1).padStart(2, "0")}
+              </div>
+
+              {/* INFO */}
+              <div className="gelar-info">
+                <h3>{item.gelar}</h3>
+
+                <p className="holder-status">
+                  {item.holder_count === 0
+                    ? "Belum ada pemegang"
+                    : `${item.holder_count} pemegang`}
+                </p>
+
+                {/* SECRETIFIED NAMES */}
+                {item.holders.length > 0 && (
+                  <div className="holders">
+                    {item.holders.map((holder) => (
+                      <span
+                        className="holder"
+                        key={holder}
+                      >
+                        {holder}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* COUNT */}
+              <div className="holder-count">
+                <strong>{item.holder_count}</strong>
+
+                <span>orang</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
 }
 
-export default App
+export default App;
