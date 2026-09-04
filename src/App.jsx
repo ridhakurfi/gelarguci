@@ -38,7 +38,7 @@ function App() {
           <h1>Daftar Gelar</h1>
 
           <p className="subtitle">
-            Catatan gelar dan para pemegangnya
+            Gelar Guci dan para pemegangnya
           </p>
         </div>
 
