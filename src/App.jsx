@@ -3,13 +3,15 @@ import { gelars } from "./data/gelars";
 import "./App.css";
 
 function App() {
-  const [sortAscending, setSortAscending] = useState(true);
+  const [showUntakenFirst, setShowUntakenFirst] = useState(false);
 
-  const sortedGelars = [...gelars].sort((a, b) => {
-    return sortAscending
-      ? a.holder_count - b.holder_count
-      : b.holder_count - a.holder_count;
-  });
+  const sortedGelars = showUntakenFirst
+    ? [...gelars].sort((a, b) => {
+        if (a.holder_count === 0 && b.holder_count !== 0) return -1;
+        if (a.holder_count !== 0 && b.holder_count === 0) return 1;
+        return 0;
+      })
+    : gelars;
 
   const totalGelars = gelars.length;
 
@@ -23,7 +25,7 @@ function App() {
   );
 
   function toggleSort() {
-    setSortAscending((current) => !current);
+    setShowUntakenFirst((current) => !current);
   }
 
   return (
@@ -48,9 +50,9 @@ function App() {
           <span className="sort-icon">↕</span>
 
           <span>
-            {sortAscending
-              ? "Belum Diambil → Paling Banyak"
-              : "Paling Banyak → Belum Diambil"}
+            {showUntakenFirst
+              ? "Kembali ke Urutan Gelar"
+              : "Tampilkan yang Belum Diambil"}
           </span>
         </button>
       </header>
@@ -116,14 +118,7 @@ function App() {
               <div className="gelar-info">
                 <h3>{item.gelar}</h3>
 
-                <p className="holder-status">
-                  {item.holder_count === 0
-                    ? "Belum ada pemegang"
-                    : `${item.holder_count} pemegang`}
-                </p>
-
-                {/* SECRETIFIED NAMES */}
-                {item.holders.length > 0 && (
+                {item.holders.length > 0 ? (
                   <div className="holders">
                     {item.holders.map((holder) => (
                       <span
@@ -134,6 +129,10 @@ function App() {
                       </span>
                     ))}
                   </div>
+                ) : (
+                  <p className="holder-status">
+                    Belum ada pemegang
+                  </p>
                 )}
               </div>
 

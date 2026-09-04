@@ -12,15 +12,12 @@ html {
 
 body {
   margin: 0;
-
   font-family:
     Arial,
     Helvetica,
     sans-serif;
-
   background: #f4f1eb;
   color: #292824;
-
   -webkit-font-smoothing: antialiased;
 }
 
@@ -36,9 +33,7 @@ button {
 .app {
   width: 100%;
   max-width: 600px;
-
   margin: 0 auto;
-
   padding:
     28px
     18px
@@ -53,9 +48,7 @@ button {
 .header {
   display: flex;
   flex-direction: column;
-
   gap: 24px;
-
   margin-bottom: 30px;
 }
 
@@ -65,30 +58,23 @@ button {
 
 .eyebrow {
   margin: 0 0 9px;
-
   font-size: 13px;
   font-weight: 700;
-
   letter-spacing: 1.8px;
-
   color: #706d65;
 }
 
 h1 {
   margin: 0;
-
   font-size: 36px;
   line-height: 1.15;
-
   font-weight: 700;
 }
 
 .subtitle {
   margin: 10px 0 0;
-
   font-size: 18px;
   line-height: 1.5;
-
   color: #68655e;
 }
 
@@ -100,28 +86,19 @@ h1 {
 .sort-button {
   width: 100%;
   min-height: 66px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 12px;
-
   padding: 14px 18px;
-
   border: 2px solid #292824;
   border-radius: 12px;
-
   background: #fffdf9;
   color: #292824;
-
   font-size: 17px;
   line-height: 1.35;
-
   font-weight: 700;
-
   cursor: pointer;
-
   transition:
     background 0.15s ease,
     transform 0.1s ease;
@@ -137,10 +114,8 @@ h1 {
 
 .sort-icon {
   flex-shrink: 0;
-
   font-size: 28px;
   line-height: 1;
-
   font-weight: 400;
 }
 
@@ -151,16 +126,11 @@ h1 {
 
 .summary {
   display: grid;
-
   grid-template-columns:
     repeat(3, 1fr);
-
   overflow: hidden;
-
   margin-bottom: 36px;
-
   background: #fffdf9;
-
   border: 1px solid #d9d4ca;
   border-radius: 12px;
 }
@@ -169,9 +139,7 @@ h1 {
   padding:
     19px
     7px;
-
   text-align: center;
-
   border-right:
     1px solid #d9d4ca;
 }
@@ -182,21 +150,16 @@ h1 {
 
 .summary-number {
   display: block;
-
   margin-bottom: 5px;
-
   font-size: 28px;
   line-height: 1;
-
   font-weight: 700;
 }
 
 .summary-label {
   display: block;
-
   font-size: 13px;
   line-height: 1.35;
-
   color: #706d65;
 }
 
@@ -207,27 +170,22 @@ h1 {
 
 .list-heading {
   display: flex;
-
   align-items: center;
   justify-content: space-between;
-
   padding:
     0
     3px;
-
   margin-bottom: 14px;
 }
 
 .list-heading h2 {
   margin: 0;
-
   font-size: 25px;
   line-height: 1.2;
 }
 
 .list-count {
   font-size: 15px;
-
   color: #706d65;
 }
 
@@ -239,7 +197,6 @@ h1 {
 .gelar-list {
   display: flex;
   flex-direction: column;
-
   gap: 10px;
 }
 
@@ -250,25 +207,18 @@ h1 {
 
 .gelar-card {
   display: grid;
-
   grid-template-columns:
     34px
     minmax(0, 1fr)
     auto;
-
   align-items: start;
-
   min-height: 92px;
-
   padding:
     18px
     15px;
-
   background: #fffdf9;
-
   border:
     1px solid #d9d4ca;
-
   border-radius: 12px;
 }
 
@@ -284,12 +234,9 @@ h1 {
 
 .number {
   padding-top: 2px;
-
   font-size: 14px;
   line-height: 1;
-
   font-weight: 700;
-
   color: #918d84;
 }
 
@@ -304,21 +251,16 @@ h1 {
 
 .gelar-info h3 {
   margin: 0 0 6px;
-
   font-size: 19px;
   line-height: 1.35;
-
   font-weight: 700;
-
   overflow-wrap: break-word;
 }
 
 .holder-status {
   margin: 0;
-
   font-size: 15px;
   line-height: 1.3;
-
   color: #747168;
 }
 
@@ -329,34 +271,23 @@ h1 {
 
 .holders {
   display: flex;
-
   flex-wrap: wrap;
-
   gap: 6px;
-
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .holder {
   display: inline-flex;
-
   align-items: center;
-
   min-height: 30px;
-
   padding:
     5px
     9px;
-
   border-radius: 6px;
-
   background: #eeeae2;
-
   font-size: 14px;
   line-height: 1;
-
   font-weight: 600;
-
   color: #4d4a44;
 }
 
@@ -367,29 +298,22 @@ h1 {
 
 .holder-count {
   min-width: 58px;
-
   padding-left: 8px;
-
   text-align: right;
 }
 
 .holder-count strong {
   display: block;
-
   font-size: 26px;
   line-height: 1.1;
-
   font-weight: 700;
 }
 
 .holder-count span {
   display: block;
-
   margin-top: 4px;
-
   font-size: 12px;
   line-height: 1;
-
   color: #747168;
 }
 
@@ -399,7 +323,6 @@ h1 {
 ================================ */
 
 @media (max-width: 380px) {
-
   .app {
     padding:
       24px
@@ -432,7 +355,6 @@ h1 {
       28px
       minmax(0, 1fr)
       auto;
-
     padding:
       16px
       12px;
