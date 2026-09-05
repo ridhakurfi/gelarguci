@@ -33,7 +33,7 @@ function App() {
       {/* HEADER */}
       <header className="header">
         <div className="header-text">
-          <p className="eyebrow">CATATAN GELAR</p>
+          <p className="eyebrow">GELAR KAMPUNG GUCI</p>
 
           <h1>Daftar Gelar</h1>
 
