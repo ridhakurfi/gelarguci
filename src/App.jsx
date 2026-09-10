@@ -52,7 +52,7 @@ function App() {
           <span>
             {showUntakenFirst
               ? "Kembali ke Urutan Gelar"
-              : "Tampilkan yang Belum Diambil"}
+              : "Tampilkan yang belum Diambil"}
           </span>
         </button>
       </header>
