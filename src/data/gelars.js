@@ -3,7 +3,7 @@ export const gelars = [
     gelar: "Datuak Nan Aluih",
     holders: [
       {
-        name: "Jabroni",
+        name: "Fakhri Zein",
         mother: "",
         location: "",
       },
