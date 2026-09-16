@@ -4,8 +4,8 @@ export const gelars = [
     holders: [
       {
         name: "Fakhri Zein",
-        mother: "",
-        location: "",
+        mother: "Yulizar",
+        location: "Kampung",
       },
     ],
     holder_count: 1,
@@ -23,7 +23,7 @@ export const gelars = [
     gelar: "Maruhun Baso",
     holders: [
       {
-        name: "Masterboy",
+        name: "Asril Chatib / Tungkek",
         mother: "Auda",
         location: "Rantau",
       },
@@ -43,9 +43,9 @@ export const gelars = [
     gelar: "Indomo",
     holders: [
       {
-        name: "Suwabrosky",
+        name: "Makwin koto Tangah",
         mother: "",
-        location: "",
+        location: "Kampung",
       },
     ],
     holder_count: 1,
@@ -61,8 +61,12 @@ export const gelars = [
 
   {
     gelar: "Sutan Sati",
-    holders: [],
-    holder_count: 0,
+    holders: {
+        name: "Revi",
+        mother: "Zudiarni",
+        location: "Rantau",
+      },
+    holder_count: 1,
 
     description: "",
     word_meanings: [],
@@ -378,13 +382,32 @@ export const gelars = [
     gelar: "Sutan Mangkuto",
     holders: [],
     holder_count: 0,
-
-    description: "",
-    word_meanings: [],
-    full_meaning: "",
-    hopes: [],
-    class: "",
-    context: "",
+    description:
+      "Ini salah satu gelar paling tinggi, paling tua, dan paling berwibawa di Minangkabau. Maknanya jauh lebih besar dari Sari Pado.",
+    word_meanings: [
+      {
+        word: "Sutan",
+        meaning:
+          "Pangkat penghormatan. Orang yang cerdik, berilmu, dan dihormati.",
+      },
+      {
+        word: "Mangkuto / Mangkota",
+        meaning:
+          "Berasal dari kata Mahkota / Mangkuto Alam. Dalam sejarah kerajaan Pagaruyung, Mangkuto dikaitkan dengan Raja, Putra Mahkota, atau pembesar kerajaan. Maknanya adalah puncak tertinggi, yang dimahkotai, dan yang memiliki kedudukan sebagai pemimpin.",
+      },
+    ],
+    full_meaning:
+      'Sutan Mangkuto berarti "Pemimpin yang Dimahkotai, Puncak Pimpinan Adat". Gelar ini menggambarkan seseorang yang menjadi pucuk pimpinan, memiliki wibawa besar, serta menjadi tempat bermuaranya persoalan dalam kaum.',
+    hopes: [
+      "Menjadi pucuk pimpinan dan tempat semua persoalan bermuara.",
+      "Memiliki wibawa seperti raja sehingga perkataan dan keputusannya dihormati.",
+      "Menjadi pelindung dan pengayom anak kemenakan.",
+      "Menjadi penerus keturunan penghulu pucuk atau orang besar dalam kaum.",
+    ],
+    class:
+      "Gelar adat tinggi yang dalam beberapa lingkungan dikaitkan dengan Penghulu Pucuk / Datuak Pucuk.",
+    context:
+      "Gelar Mangkuto tidak boleh diberikan secara sembarangan. Di nagari asli di Sumatera Barat, gelar ini umumnya merupakan gelar warisan pusako. Di rantau seperti Pekanbaru, Mangkuto juga dapat digunakan sebagai gelar penghormatan atau Gelar Gaok untuk pengantin, tetapi tetap perlu seizin Niniak Mamak. Gelar ini disebut banyak digunakan dalam beberapa suku seperti Caniago, Sikumbang, Tanjung, dan Koto. Dalam gambaran struktur adat yang diberikan, Sutan Mudo dikaitkan dengan pengantin, Sutan Sari Pado dengan kepala kaum, dan Sutan Mangkuto dengan pucuk pimpinan adat.",
     source: "",
   },
 
@@ -444,13 +467,12 @@ export const gelars = [
       "Menjadi orang yang sempurna dan seimbang, tidak kekurangan di satu sisi.",
     ],
 
-    class:
-      "Gelar Sako (Pusako) - gelar warisan tinggi.",
+    class: "Gelar Sako (Pusako) - gelar warisan tinggi.",
 
     context:
       "Bukan gelar main-main / gaok. Ini biasanya gelar milik Penghulu Andiko atau kepala kaum di suku tertentu. Contohnya di suku Caniago, Sikumbang, atau Jambak banyak yang memakai Sari Pado. Kalau gelar ini diberikan ke pengantin, berarti mamak pihak perempuan sangat menghormati pengantin laki-laki. Ia dianggap bukan orang sembarangan, tetapi orang yang diharapkan akan menjadi sandaran kaum. Di Pekanbaru dan daerah rantau, gelar ini sering dipakai karena terdengar bagus, berwibawa, dan maknanya dalam.",
 
-    source: "Jabroni / Datuak Nan Aluih",
+    source: "Fakhri Zein / Datuak Nan Aluih",
   },
 
   {

@@ -212,7 +212,7 @@ function App() {
 
                                 {holder.location && (
                                   <span>
-                                    {holder.location}
+                                    Domisili: {holder.location}
                                   </span>
                                 )}
                               </div>
