@@ -57,7 +57,7 @@ function App() {
           <h2>Fakhri Zein / Datuak nan Aluih</h2>
 
           <p>
-            Pemimpin Kampung Guci yang menjadi salah satu
+            Datuak Kampung Guci yang menjadi salah satu
             sumber informasi mengenai gelar dan sejarah adat
             di kampung.
           </p>
