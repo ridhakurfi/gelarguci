@@ -4,7 +4,7 @@ export const gelars = [
     holders: [
       {
         name: "Fakhri Zein",
-        mother: "Yulizar",
+        mother: "",
         location: "Kampung",
       },
     ],
@@ -62,10 +62,10 @@ export const gelars = [
   {
     gelar: "Sutan Sati",
     holders: {
-        name: "Revi",
-        mother: "Zudiarni",
-        location: "Rantau",
-      },
+      name: "Revi",
+      mother: "Zudiarni",
+      location: "Rantau",
+    },
     holder_count: 1,
 
     description: "",
@@ -81,14 +81,14 @@ export const gelars = [
     gelar: "Sutan Pamenan",
     holders: [
       {
-        name: "Joni",
+        name: "Fauzan Hendra (ujan)",
         mother: "",
         location: "",
       },
       {
-        name: "Lukas",
-        mother: "",
-        location: "",
+        name: "Lucky Ferdian (anak ni jun)",
+        mother: "Zurni",
+        location: "Rantau",
       },
     ],
     holder_count: 2,
@@ -106,14 +106,14 @@ export const gelars = [
     gelar: "Sutan Rajo Basa",
     holders: [
       {
-        name: "Ferdinan",
+        name: "Bernando Hendra/apun",
         mother: "",
         location: "",
       },
       {
-        name: "Viktor",
-        mother: "",
-        location: "",
+        name: "Victor Sipayung (ni yet tek huda)",
+        mother: "Zuryetni",
+        location: "Kampung",
       },
     ],
     holder_count: 2,
@@ -131,9 +131,9 @@ export const gelars = [
     gelar: "Sutan Maruhun Kayo",
     holders: [
       {
-        name: "Jafar Aladdin",
+        name: "Jafril/Da jaf",
         mother: "",
-        location: "",
+        location: "Kampung",
       },
     ],
     holder_count: 1,
@@ -148,12 +148,12 @@ export const gelars = [
   },
 
   {
-    gelar: "Malin Biluak",
+    gelar: "Batuah",
     holders: [
       {
-        name: "Juntobing",
-        mother: "",
-        location: "",
+        name: "Ahmad Helmie (anak ni jun)",
+        mother: "Zurni",
+        location: "Rantau",
       },
     ],
     holder_count: 1,
@@ -171,19 +171,14 @@ export const gelars = [
     gelar: "Sutan Mudo",
     holders: [
       {
-        name: "Aslan",
-        mother: "",
-        location: "",
+        name: "Asfarizal (iril guci)",
+        mother: "Auda",
+        location: "Kampung",
       },
       {
-        name: "Chen Choi",
+        name: "Yusra Khan",
         mother: "",
-        location: "",
-      },
-      {
-        name: "Nini Lungki",
-        mother: "",
-        location: "",
+        location: "Rantau",
       },
     ],
     holder_count: 3,
@@ -201,9 +196,9 @@ export const gelars = [
     gelar: "Malin Kayo",
     holders: [
       {
-        name: "Pecal",
-        mother: "",
-        location: "",
+        name: "Feisal Kurfi Aditya",
+        mother: "Zulfina",
+        location: "Kampung",
       },
     ],
     holder_count: 1,
@@ -221,9 +216,9 @@ export const gelars = [
     gelar: "Basa nan Sati",
     holders: [
       {
-        name: "Iriguci",
-        mother: "",
-        location: "",
+        name: "Aurizal Chatib (Eri)",
+        mother: "Auda",
+        location: "Kampung",
       },
     ],
     holder_count: 1,
@@ -236,18 +231,37 @@ export const gelars = [
     context: "",
     source: "",
   },
-
   {
     gelar: "Sutan Bandaro",
     holders: [],
     holder_count: 0,
-
-    description: "",
-    word_meanings: [],
-    full_meaning: "",
-    hopes: [],
-    class: "",
-    context: "",
+    description:
+      "Ini gelar saudagar, gelar orang kaya, dan sangat populer di rantau, termasuk di Pekanbaru.",
+    word_meanings: [
+      {
+        word: "Sutan",
+        meaning:
+          "Pangkat penghormatan adat. Menggambarkan orang yang cerdik, berilmu, dan dihormati.",
+      },
+      {
+        word: "Bandaro / Bandar / Bendahara",
+        meaning:
+          "Berkaitan dengan bandar sebagai tempat berkumpulnya perdagangan dan bendahara sebagai orang yang memegang serta mengatur harta. Dalam tradisi kerajaan Pagaruyung, Bandaro dikaitkan dengan kedudukan pembesar yang mengurus urusan harta dan perdagangan. Dalam makna adat, Bandaro menggambarkan saudagar besar, orang kaya, dan orang yang pandai mengatur harta.",
+      },
+    ],
+    full_meaning:
+      'Sutan Bandaro berarti "Saudagar Besar, Pemegang Harta Kaum, Orang Kaya yang Dermawan". Gelar ini menggambarkan seseorang yang berhasil dalam usaha, pandai berniaga, memiliki rezeki yang luas, dan menggunakan kekayaannya untuk membantu kaum dan keluarga.',
+    hopes: [
+      "Menjadi orang yang kaya dan murah rezeki serta menjadi tumpuan ekonomi kaum dan keluarga.",
+      "Pandai berniaga atau berbisnis dan cerdik dalam mencari nafkah.",
+      "Menjadi orang kaya yang dermawan dan menggunakan hartanya untuk membantu kaum.",
+      "Mampu membantu pembangunan surau, pelaksanaan baralek, dan kebutuhan keluarga serta anak kemenakan.",
+      "Menjadi orang yang mampu menyimpan, menjaga, dan mengatur harta pusako kaum.",
+    ],
+    class:
+      "Gelar Sako / Pusako Tinggi. Dalam beberapa nagari, gelar ini juga digunakan untuk Penghulu Pucuk.",
+    context:
+      "Sutan Bandaro sangat populer di rantau, termasuk di Pekanbaru. Di beberapa nagari, gelar ini memiliki kedudukan adat yang tinggi dan dapat menjadi gelar Penghulu Pucuk. Contohnya, di Sungai Tarab Sutan Bandaro disebut sebagai penghulu pucuk Suku Caniago, sedangkan di Batipuh disebut sebagai penghulu pucuk Suku Jambak. Di rantau, gelar ini juga sering diberikan sebagai Gelar Gaok untuk pengantin. Maknanya menjadi doa agar penyandang gelar berhasil dalam usaha, kaya, murah rezeki, dan mampu membantu keluarga serta kaum.",
     source: "",
   },
 
@@ -255,7 +269,7 @@ export const gelars = [
     gelar: "Malin Basa",
     holders: [
       {
-        name: "Oxygenator",
+        name: "Oksi Maripratama (menantu dt. Nan Aluih)",
         mother: "",
         location: "",
       },
@@ -275,7 +289,7 @@ export const gelars = [
     gelar: "Sutan Muhammad",
     holders: [
       {
-        name: "Mukjizat",
+        name: "Wahyu Kamal",
         mother: "",
         location: "",
       },
@@ -309,9 +323,9 @@ export const gelars = [
     gelar: "Sutan Saidi",
     holders: [
       {
-        name: "Tompel",
-        mother: "",
-        location: "",
+        name: "Rifky Delmaizi (Del)",
+        mother: "Zudiarni",
+        location: "Rantau",
       },
     ],
     holder_count: 1,
@@ -324,36 +338,44 @@ export const gelars = [
     context: "",
     source: "",
   },
-
   {
     gelar: "Sutan Kamaluddin",
     holders: [],
     holder_count: 0,
-
-    description: "",
-    word_meanings: [],
-    full_meaning: "",
-    hopes: [],
-    class: "",
-    context: "",
+    description:
+      "Ini gelar yang berbeda dari Sutan Mangkuto, Sutan Sari Pado, dan Sutan Bandaro. Jika ketiga gelar tersebut lebih menekankan adat, Kamaluddin memadukan unsur adat dengan nilai Islam.",
+    word_meanings: [
+      {
+        word: "Sutan",
+        meaning:
+          "Pangkat adat yang menggambarkan orang yang dihormati dan cerdik.",
+      },
+      {
+        word: "Kamaluddin / Kamaludin",
+        meaning:
+          "Berasal dari bahasa Arab كمال الدين (Kamal ad-Din). Kamal berarti kesempurnaan atau kesempurnaan keindahan, sedangkan Ad-Din berarti agama. Secara makna, Kamaluddin dapat dipahami sebagai kesempurnaan agama.",
+      },
+    ],
+    full_meaning:
+      'Sutan Kamaluddin berarti "Pemimpin Adat yang Sempurna Agamanya, Indah Budi dan Agamanya". Gelar ini menjadi doa agar penyandangnya memiliki keseimbangan antara adat, akhlak, dan agama.',
+    hopes: [
+      "Menjadi orang yang alim dan taat beragama, bukan hanya pandai dalam adat tetapi juga kuat dalam agama.",
+      "Memiliki akhlak yang baik dan menjadi contoh dalam keluarga serta kaum.",
+      "Menjadi imam atau panutan agama di dalam keluarga dan kaumnya.",
+      "Memiliki keindahan budi dan akhlak sebagaimana makna kesempurnaan yang terkandung dalam kata Kamal.",
+      "Menjalankan kehidupan yang selaras dengan nilai Adat Basandi Syarak, Syarak Basandi Kitabullah.",
+    ],
+    class:
+      "Gelar Gaok / Gelar Kehormatan yang memadukan unsur adat dan nilai Islam, bukan Gelar Sako Pusako.",
+    context:
+      "Sutan Kamaluddin berbeda dari gelar seperti Bandaro, Mangkuto, dan Sari Pado yang lebih kuat unsur adatnya. Nama Kamaluddin berasal dari bahasa Arab dan memberikan nuansa Islam yang kuat pada gelar tersebut. Gelar dengan pola serupa antara lain Sutan Syahbuddin, Sutan Jamaluddin, dan Sutan Nurdin. Gelar seperti ini dapat digunakan sebagai gelar kehormatan dan doa bagi pengantin, terutama ketika keluarga ingin menekankan harapan agar penyandangnya menjadi orang yang alim, santun, berakhlak baik, dan mampu menjadi panutan dalam keluarga.",
     source: "",
   },
 
   {
     gelar: "Sutan Rajo Ameh",
-    holders: [
-      {
-        name: "Sunmbat",
-        mother: "",
-        location: "",
-      },
-      {
-        name: "Ayangku",
-        mother: "",
-        location: "",
-      },
-    ],
-    holder_count: 2,
+    holders: [],
+    holder_count: 0,
 
     description: "",
     word_meanings: [],
@@ -366,8 +388,14 @@ export const gelars = [
 
   {
     gelar: "Sutan Mangkuto Sati",
-    holders: [],
-    holder_count: 0,
+    holders: [
+      {
+        name: "Zaidel Hamdi (Andi)",
+        mother: "Zurni",
+        location: "Rantau",
+      },
+    ],
+    holder_count: 1,
 
     description: "",
     word_meanings: [],
@@ -415,9 +443,9 @@ export const gelars = [
     gelar: "Mantari",
     holders: [
       {
-        name: "America Mcgee",
+        name: "Amril (Da Am)",
         mother: "",
-        location: "",
+        location: "Kampung",
       },
     ],
     holder_count: 1,
